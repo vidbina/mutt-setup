@@ -1,6 +1,22 @@
 set from="vid@bina.me"
 set realname="David Asabina"
 
-set sendmail="/path/to/msmtp"
+#set sendmail="/path/to/msmtp"
 set use_from=yes
 set envelope_from=yes
+
+set imap_user="vid@bina.me"
+set imap_pass="`gpg --quiet --for-your-eyes-only -d ~/.mutt/vidbina.gpg`"
+
+set smtp_url="smtp://vid@bina.me@smtp.gmail.com:587/"
+set smtp_pass="`gpg --quiet --for-your-eyes-only -d ~/.mutt/vidbina.gpg`"
+
+
+set folder="imaps://imap.gmail.com:993"
+set spoolfile="+INBOX"
+set postponed="+[Gmail]/Drafts"
+
+set sort=threads
+set editor=vi
+
+source ~/.mutt/colors
