@@ -1,0 +1,6 @@
+set from="vid@bina.me"
+set realname="David Asabina"
+
+set sendmail="/path/to/msmtp"
+set use_from=yes
+set envelope_from=yes
