@@ -20,3 +20,6 @@ set sort=threads
 set editor=vi
 
 source ~/.mutt/colors
+
+set message_cachedir=~/.mutt/msgs
+set header_cache=~/.mutt/hdrs
