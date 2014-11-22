@@ -1,0 +1,24 @@
+[general]
+accounts = vidbina
+ssl = yes
+pythonfile = ~/.mutt/offlineimap.py
+
+[Account vidbina]
+localrepository = vidbina_local
+remoterepository = vidbina
+status_backend = sqlite
+
+[Repository vidbina]
+sslcacertfile = ~/.certs/ca-bundle.crt
+#cert_fingerprint = 9d5e4c35f59fcb4edd3fa4d47a453bbc1cf2aff1
+#type = IMAP
+type = Gmail
+remotehost = imap.gmail.com
+remoteuser = vid@bina.me
+remotepasseval = get_email_password("vidbina")
+#remoteport = 993
+folderfilter = lambda folder: folder in ['INBOX', 'Sent']
+
+[Repository vidbina_local]
+type = Maildir
+localfolders = ~/.mutt/mail/vidbina
