@@ -6,7 +6,7 @@ pythonfile = ~/.mutt/offlineimap.py
 [Account vidbina]
 localrepository = vidbina_local
 remoterepository = vidbina
-status_backend = sqlite
+#status_backend = sqlite
 
 [Repository vidbina]
 sslcacertfile = ~/.certs/ca-bundle.crt
