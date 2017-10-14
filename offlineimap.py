@@ -13,5 +13,5 @@ def get_email_password(account):
   else:
     return None
 
-print "password is %s" % (get_email_password("vidbina"))
-print "password is %s" % (get_email_password(12))
+print("password is %s" % (get_email_password("vidbina")))
+print("password is %s" % (get_email_password(12)))
