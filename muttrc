@@ -8,6 +8,7 @@ set sort=threads
 set editor=vi
 
 source ~/.mutt/colors
+source ~/.mutt/aliases
 source ~/.mutt/accounts/setup
 
 set message_cachedir=~/.mutt/msgs
