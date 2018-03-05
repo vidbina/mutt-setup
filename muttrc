@@ -1,4 +1,4 @@
-set sendmail="/usr/local/bin/msmtp"
+set sendmail="/run/current-system/sw/bin/msmtp"
 set use_from=yes
 set envelope_from=yes
 set copy=yes
