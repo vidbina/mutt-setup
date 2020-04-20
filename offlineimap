@@ -1,6 +1,7 @@
 [general]
 accounts = vidbina
 ssl = yes
+tls_level = tls_secure
 pythonfile = ~/.mutt/offlineimap.py
 
 [Account vidbina]
@@ -10,6 +11,7 @@ remoterepository = vidbina
 
 [Repository vidbina]
 sslcacertfile = ~/.certs/ca-bundle.crt
+ssl_version=tls1_2
 #cert_fingerprint = 9d5e4c35f59fcb4edd3fa4d47a453bbc1cf2aff1
 #type = IMAP
 type = Gmail
