@@ -1,15 +1,22 @@
 set sendmail="/run/current-system/sw/bin/msmtp"
 set use_from=yes
-set envelope_from=yes
+set use_envelope_from=yes
 set copy=yes
 set record="~/.mutt/mail/out"
 
 set sort=threads
-set editor=vi
+set editor=nvim
 
-source ~/.mutt/colors
+# Refer to https://neomutt.org/man/neomuttrc for details
+set date_format="!%a, %b %d, %Y at %I:%M:%S%p %Z"
+set folder_format="%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %i"
+# %l - number of lines in unprocessed message
+set index_format="%4C %Z %{%Y-%m-%d %H%M} %-15.15L (%?l?%4l&%4c?) %s"
+
+source ~/.mutt/pgp.muttrc
+source ~/.mutt/colors.muttrc
 source ~/.mutt/aliases
-source ~/.mutt/accounts/setup
+source ~/.mutt/accounts/setup.muttrc
 
 set message_cachedir=~/.mutt/msgs
 set header_cache=~/.mutt/hdrs
