@@ -24,3 +24,5 @@ folderfilter = lambda folder: folder in ['INBOX', 'Sent']
 [Repository vidbina_local]
 type = Maildir
 localfolders = ~/.mutt/mail/vidbina
+
+# vi: ft=dosini
