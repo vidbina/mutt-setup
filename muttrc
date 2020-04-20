@@ -7,6 +7,7 @@ set record="~/.mutt/mail/out"
 set sort=threads
 set editor=vi
 
+source ~/.mutt/pgp.muttrc
 source ~/.mutt/colors.muttrc
 source ~/.mutt/aliases
 source ~/.mutt/accounts/setup.muttrc
