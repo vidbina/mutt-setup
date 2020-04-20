@@ -1,0 +1,9 @@
+*.gpg
+*.log
+*.pyc
+accounts
+aliases
+hdrs
+hdrs-lock
+mail
+msgs
