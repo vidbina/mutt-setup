@@ -12,3 +12,9 @@ def get_email_password(account):
 
   else:
     return None
+
+def get_pass(name):
+  s = "pass %s" % (name)
+  p = Popen(s.split(' '), stdin=PIPE, stdout=PIPE, stderr=PIPE)
+  output, err = p.communicate()
+  return output
