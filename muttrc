@@ -1,6 +1,6 @@
 set sendmail="/run/current-system/sw/bin/msmtp"
 set use_from=yes
-set envelope_from=yes
+set use_envelope_from=yes
 set copy=yes
 set record="~/.mutt/mail/out"
 
