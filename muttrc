@@ -5,7 +5,7 @@ set copy=yes
 set record="~/.mutt/mail/out"
 
 set sort=threads
-set editor=vi
+set editor=nvim
 
 source ~/.mutt/pgp.muttrc
 source ~/.mutt/colors.muttrc
