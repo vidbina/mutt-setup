@@ -7,9 +7,9 @@ set record="~/.mutt/mail/out"
 set sort=threads
 set editor=vi
 
-source ~/.mutt/colors
+source ~/.mutt/colors.muttrc
 source ~/.mutt/aliases
-source ~/.mutt/accounts/setup
+source ~/.mutt/accounts/setup.muttrc
 
 set message_cachedir=~/.mutt/msgs
 set header_cache=~/.mutt/hdrs
