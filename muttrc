@@ -7,6 +7,12 @@ set record="~/.mutt/mail/out"
 set sort=threads
 set editor=nvim
 
+# Refer to https://neomutt.org/man/neomuttrc for details
+set date_format="!%a, %b %d, %Y at %I:%M:%S%p %Z"
+set folder_format="%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %i"
+# %l - number of lines in unprocessed message
+set index_format="%4C %Z %{%Y-%m-%d %H%M} %-15.15L (%?l?%4l&%4c?) %s"
+
 source ~/.mutt/pgp.muttrc
 source ~/.mutt/colors.muttrc
 source ~/.mutt/aliases
